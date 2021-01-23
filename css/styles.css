@@ -9,9 +9,14 @@
     --main-font: "Roboto", sans-serif;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
     font-family: var(--main-font);
-    box-sizing: border-box;
 }
 
 h1,
@@ -42,7 +47,6 @@ img {
 }
 
 .container {
-    box-sizing: border-box;
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
