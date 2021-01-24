@@ -251,18 +251,21 @@ img {
 
 .team-list {
     display: flex;
-}
-
-.team-list-item:not(:last-child) {
-    margin-right: 30px;
+    flex-wrap: wrap;
+    margin: -15px;
 }
 
 .team-list-item {
+    margin: 15px;
+}
+
+.team-caption {
+    padding-top: 30px;
+    padding-bottom: 30px;
     background-color: var(--white-color);
 }
 
 .team-subtitle {
-    padding-top: 30px;
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
@@ -273,7 +276,6 @@ img {
 }
 
 .team-text {
-    padding-bottom: 30px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.188;
