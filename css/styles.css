@@ -243,6 +243,7 @@ img {
 /* ======OUR TEAM======= */
 
 .our-team {
+    min-width: 1200px;
     padding-top: 94px;
     padding-bottom: 94px;
     background-color: var(--second-bcg);
