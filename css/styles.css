@@ -158,6 +158,7 @@ img {
 /* ======HERO======= */
 
 .hero {
+    min-width: 1200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -283,6 +284,7 @@ img {
 /* ======FOOTER======= */
 
 .footer {
+    min-width: 1200px;
     background-color: var(--bcg-footer-color);
 }
 
@@ -292,15 +294,13 @@ img {
     margin-bottom: 20px;
 }
 
-.footer-contacts-link {
-    display: inline-block;
-}
-
 .footer-contacts-link:not(:last-child) {
     margin-bottom: 9px;
 }
 
 .address {
+    display: flex;
+    flex-direction: column;
     padding-bottom: 60px;
 }
 
