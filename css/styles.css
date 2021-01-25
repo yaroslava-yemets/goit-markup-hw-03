@@ -8,6 +8,7 @@
     --white-color: #ffffff;
     --black-color: #000000;
     --second-bcg: #f5f4fa;
+    --border-header: #ececec;
     --main-font: "Roboto", sans-serif;
 }
 
@@ -69,6 +70,10 @@ img {
 }
 
 /* ======HEADER======= */
+
+.header {
+    border-bottom: 1px solid var(--border-header);
+}
 
 .header .container {
     display: flex;
@@ -158,15 +163,13 @@ img {
 /* ======HERO======= */
 
 .hero {
-    min-width: 1200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-color: var(--bcg-footer-color);
-    padding: 200px;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero-title {
+    margin: 0 auto;
     max-width: 696px;
     font-weight: 900;
     font-size: 44px;
@@ -178,8 +181,8 @@ img {
 }
 
 .hero-link {
-    display: inline-block;
-    margin-top: 30px;
+    margin: 30px auto 0;
+    display: block;
     padding: 10px 31px;
     width: 200px;
     box-shadow: 0px 4px 4px var(--hero-btn-shadow);
@@ -194,9 +197,12 @@ img {
 
 /* ======FEATURES======= */
 
+
+.features {
+    padding: 94px 0;
+}
 .feature-list {
     display: flex;
-    padding: 94px 0;
 }
 
 .feature-list-item {
@@ -257,11 +263,14 @@ img {
 
 .team-list-item {
     margin: 15px;
+    width: 270px;
 }
 
 .team-caption {
     padding-top: 30px;
     padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30PX;
     background-color: var(--white-color);
 }
 
@@ -288,12 +297,13 @@ img {
 
 .footer {
     min-width: 1200px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--bcg-footer-color);
 }
 
 .footer .logo {
     display: inline-block;
-    padding-top: 60px;
     margin-bottom: 20px;
 }
 
@@ -304,7 +314,6 @@ img {
 .address {
     display: flex;
     flex-direction: column;
-    padding-bottom: 60px;
 }
 
 .address > .map {
@@ -383,6 +392,7 @@ img {
 
 .projects-caption {
     padding-left: 24px;
+    padding-right: 24px;
     padding-bottom: 20px;
     padding-top: 20px;
     border-left: 1px solid #eeeeee;
@@ -391,6 +401,7 @@ img {
 }
 
 .example-list-item {
+    width: 370px;
     background-color: var(--white-color);
 }
 
